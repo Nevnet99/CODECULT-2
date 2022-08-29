@@ -1,0 +1,17 @@
+@use "sass:list";
+@use "../theme/themes.scss";
+
+@mixin generateTheme($themeName) {
+  @if not map-get(themes.$themes, $themeName) {
+    @error '$name must be one of (#{theme})';
+  }
+
+  :root {
+    --current-theme: #{$themeName};
+
+    @each $variable-name, $variable-value in map-get(themes.$themes, $themeName)
+    {
+      --#{$variable-name}: #{$variable-value};
+    }
+  }
+}

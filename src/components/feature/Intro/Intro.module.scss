@@ -1,0 +1,31 @@
+.introduction {
+  position: relative;
+}
+
+.img__wrapper {
+  display: flex;
+  place-items: center;
+  z-index: 1;
+  overflow: hidden;
+
+  img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+.mask {
+  display: flex;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 0 70px;
+  position: absolute;
+  top: 50%;
+  width: calc(100% - 140px);
+  transform: translateY(-50%);
+  z-index: 2;
+}

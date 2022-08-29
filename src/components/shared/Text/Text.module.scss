@@ -1,0 +1,47 @@
+@use "../../../styles/helpers" as helpers;
+
+.text {
+  color: helpers.color("text");
+  margin: 0;
+  padding: 0;
+}
+// TODO: ADD THESE TO SCSS THEME
+// TODO: RELATIVE UNITS
+.sm {
+  font-size: 10px;
+}
+.body {
+  font-size: 24px;
+}
+.md {
+  font-size: 48px;
+}
+
+.lg {
+  font-size: 32px;
+}
+.xl {
+  font-size: 64px;
+}
+.xxl {
+  font-size: 96px;
+}
+.xxxl {
+  font-size: 256px;
+}
+
+p.text,
+span.text,
+a.text {
+  font-family: "Source Code Pro";
+  font-weight: 300;
+}
+
+h1.text,
+h2.text,
+h3.text,
+h4.text,
+h5.text {
+  font-family: "Din";
+  font-weight: 900;
+}
