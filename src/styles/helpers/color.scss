@@ -1,0 +1,10 @@
+@use "sass:list";
+@use "../theme/themes.scss";
+
+@function color($name) {
+  @if not map-get(themes.$themes, dark, $name) {
+    @error '$name must be one of (#{theme})';
+  }
+
+  @return var(--#{$name});
+}

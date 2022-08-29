@@ -1,0 +1,5 @@
+@use "../../../styles/helpers" as helpers;
+
+.layout {
+  background: helpers.color("background");
+}
